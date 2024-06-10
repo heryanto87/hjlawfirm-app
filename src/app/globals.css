@@ -1,4 +1,39 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Balladeer";
+  src: url(/font/Balladeer-Medium.ttf);
+}
+
+@font-face {
+  font-family: "DroidSerifBold";
+  src: url(/font/DroidSerif-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Nauman";
+  src: url(/font/Nauman-Regular.ttf);
+}
+
+@font-face {
+  font-family: "GeosansLight";
+  src: url(/font/GeosansLight.ttf);
+}
+
+@font-face {
+  font-family: "CinzelRegular";
+  src: url(/font/Cinzel-Regular.ttf);
+}
+
+@font-face {
+  font-family: "QuattrocentoRegular";
+  src: url(/font/Quattrocento-Regular.ttf);
+}
+
+@font-face {
+  font-family: "LoraVariable";
+  src: url(/font/Lora-Variable.ttf);
+}

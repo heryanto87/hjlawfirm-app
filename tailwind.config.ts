@@ -29,12 +29,41 @@ const config = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.4s ease-out",
+        "accordion-up": "accordion-up 0.4s ease-out",
       },
+      textColor: {
+        primary: {
+          unactive: "#AAA59E",
+          highlight: "#C08727",
+          DEFAULT: "#55504B",
+        },
+      },
+      backgroundColor: {
+        primary: {
+          DEFAULT: "#C08727",
+          darker: "#9A6C1F"
+        },
+        main: {
+          DEFAULT: "#FDF6F0",
+          box: "#FAE3D1"
+        },
+        secondary: {
+          DEFAULT: "#414143"
+        }
+      },
+      fontFamily: {
+        'balladeer': ['Balladeer', 'sans-serif'],
+        'droidserifbold': ['DroidSerifBold', 'sans-serif'],
+        'nauman': ['Nauman', 'sans-serif'],
+        'geosanslight': ['GeosansLight', 'sans-serif'],
+        'cinzelregular': ['CinzelRegular', 'sans-serif'],
+        'quattrocentoregular': ['QuattrocentoRegular', 'sans-serif'],
+        'loravariable': ['LoraVariable', 'sans-serif'],
+      }
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/container-queries')],
 } satisfies Config
 
 export default config
