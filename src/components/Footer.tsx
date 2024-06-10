@@ -1,10 +1,20 @@
-'use client'
+"use client"
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Phone, Mail, Pin, Clock } from 'lucide-react'
 
 const Footer = () => {
+  
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
   return (
     <>
       <div className='w-full h-auto bg-black text-white'>
