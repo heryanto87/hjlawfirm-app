@@ -46,7 +46,8 @@ const config = {
         },
         main: {
           DEFAULT: "#FDF6F0",
-          box: "#FAE3D1"
+          box: "#FAE3D1",
+          white: "#FFFFFF"
         },
         secondary: {
           DEFAULT: "#414143"

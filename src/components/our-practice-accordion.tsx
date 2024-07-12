@@ -12,12 +12,12 @@ import Image from 'next/image'
 export default function OurPracticeAccordion() {
   return (
     <>
-      <div className='grid grid-flow-row grid-cols-2 gap-10 mt-40'>
+      <div className='grid grid-flow-row sm:grid-cols-2 gap-10 mt-40'>
         <div className='row-span-1 relative flex justify-center'>
-          <Image src={'/img/about-3.jpg'} width={0} height={0} sizes='100' alt='' className='rounded-xl w-4/5' />
+          <Image src={'/img/about-3.jpg'} width={0} height={0} sizes='100' alt='' className='rounded-xl w-4/5 shadow-lg shadow-black/50' />
         </div>
         <div className='row-span-1 flex flex-col gap-6'>
-          <div className='flex flex-col gap-6 items-end'>
+          <div className='flex flex-col gap-6 items-center sm:items-end'>
             <p className='text-primary text-6xl font-quattrocentoregular pb-4'>Our Practice</p>
             <span className='border-b-2 border-black w-1/12'></span>
           </div>

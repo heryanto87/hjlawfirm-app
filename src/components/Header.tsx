@@ -24,8 +24,7 @@ export default function Header() {
 
   return (
     <>
-      <div className={`flex z-10 flex-col sm:flex-col gap-2 ${isPath('/home') && 'min-h-screen bg-[url("/img/background/home-bg.jpg")] bg-contain bg-no-repeat bg-right-top mix-blend-darken'}`}>
-        <div className={`${isPath('/home') ? 'absolute w-full h-screen bg-main/75 z-0' : 'hidden'}`}></div>
+      <div className={`flex z-10 flex-col sm:flex-col gap-2`}>
         <div className='flex flex-col sm:flex-row justify-between z-10'>
           <div className='flex flex-row justify-center sm:gap-6 items-center overflow-visible'>
             <Image src="/img/logo/logo-1-transparent.png" alt='icon' width="128" height="128" />

@@ -37,3 +37,7 @@
   font-family: "LoraVariable";
   src: url(/font/Lora-Variable.ttf);
 }
+
+.leaflet-container {
+  height: 400px;
+}

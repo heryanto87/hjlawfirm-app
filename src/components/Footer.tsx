@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <>
       <div className='w-full h-auto bg-black text-white'>
-        <div className='bg-white/10 flex flex-row'>
+        <div className='bg-white/10 flex sm:flex-row flex-col'>
           <div className='flex flex-col p-20'>
             <Image src='/img/logo/logo-1-transparent.png' alt='logo' width={0} height={0} sizes='100' className='w-20' />
             <div>
@@ -41,7 +41,7 @@ const Footer = () => {
               <p className='font-thin'>Mon - Fri 9.00 - 17.00</p>
             </span>
             <span className='flex flex-row gap-4 text-wrap'>
-              <Pin className='text-primary-highlight' size={24} />
+              <Pin className='text-primary-highlight min-w-6' size={24} />
               <div className='flex flex-col gap-2'>
                 <span>
                   <p className='font-bold'>Head Office</p>

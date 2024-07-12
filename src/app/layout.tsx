@@ -18,9 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} sm:m-16 bg-main m-0 overflow-x-hidden`}>
-        <Header />
-        {children}
+      <body className={`${inter.className} sm:m-16 bg-main overflow-x-hidden`}>
+        <div className="sm:flex sm:justify-center">
+          <div className="sm:max-w-screen-2xl max-w-screen-lg w-full">
+            <Header />
+            {children}
+          </div>
+        </div>
       </body>
       <Footer />
     </html>
