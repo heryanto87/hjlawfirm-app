@@ -1,25 +1,11 @@
-"use client"
+'use client'
 
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import ProfileCard from '@/components/profile-card'
 import TeamsCarousel from '@/components/teams-carousel'
 import OurPracticeAccordion from '@/components/our-practice-accordion'
-import Location from '@/components/location'
+const Location = dynamic(() => import ('@/components/location'), { ssr: false })
 
 export default function Aboutus() {
   return (
