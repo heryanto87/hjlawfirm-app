@@ -19,7 +19,7 @@ export default function Home() {
         <div className={`${isPath('/home') ? 'absolute w-full h-screen bg-main/85 -z-10' : 'hidden'}`}></div>
         <div className='grid grid-flow-row sm:grid-cols-2 gap-10 items-center py-40'>
           <div className='row-span-1 sm:ms-auto mx-auto'>
-            <Image src={'/img/home-1.jpg'} sizes='100' width={0} height={0} className='w-full max-w-2xl rounded-xl shadow-xl' alt='' />
+            <Image src={'/img/home-1.jpg'} sizes='100' width={0} height={0} className='w-screen sm:w-full max-w-2xl rounded-xl shadow-xl' alt='' />
           </div>
           <div className='row-span-1 max-w-xl me-auto flex flex-col gap-10 px-10  '>
             <span className='text-3xl font-cinzelregular text-wrap'>LAW FIRM HJ & PARTNERS</span>
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='w-screen bg-slate-500 text-white flex sm:flex-row flex-col gap-4 py-20 px-32 -mx-20'>
+      <div className='w-full md:w-screen bg-slate-500 text-white flex sm:flex-row flex-col gap-4 py-20 sm:px-32 px-10 md:-mx-20'>
         <div className='flex flex-col gap-6'>
           <Image src={'/users.svg'} sizes='100' width={0} height={0} className='w-16' alt='' />
           <p className='text-2xl font-quattrocentoregular'>Client Satisfactions</p>
@@ -51,7 +51,7 @@ export default function Home() {
           <p className='text-md font-sans'>We offer comprehensive legal protection for our clients, prioritizing your rights and interests. You can be confident that your legal rights are fully safeguarded with us.</p>
         </div>
       </div>
-      <div className='w-full flex flex-row py-40 px-20'>
+      <div className='w-full flex sm:flex-row flex-col py-40 px-20 gap-20'>
         <div className='flex flex-col gap-6'>
           <p className='text-5xl font-quattrocentoregular'>Consultation</p>
           <p className='text-md font-sans'>Navigating the law can be complicated and neglecting it may cause serious issues. Let us help you!</p>
@@ -85,7 +85,7 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className='w-full ps-20'>
+        <div className='w-full sm:ps-20'>
           <form action="" className='flex flex-col gap-8'>
             <div className='flex flex-row gap-4'>
               <input className='w-full p-6' type="text" placeholder='First Name' autoComplete='off' />
